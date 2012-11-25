@@ -22,6 +22,14 @@ USER_DIR = '${HOME}/Documents/Arduino/'
 def plugin_file(name):
     return os.path.join(PLUGIN_PATH, name)
 
+class CleanCommand(sublime_plugin.WindowCommand):
+    """ Compile the current file """
+    def run(self):
+        self.window.run_command('set_build_system', {
+          'file': 'Packages/ST2-Arduino/Arduino-Clean.sublime-build'
+        })
+        self.window.run_command('build')
+
 class CompileCommand(sublime_plugin.WindowCommand):
     """ Compile the current file """
     def run(self):

@@ -4,15 +4,19 @@
     "command": "new_sketch"
   },
   {
-    "caption": "Open Arduino Libraries",
+    "caption": "Arduino: Open Libraries",
     "command": "open_arduino_libraries"
   },
   {
-    "caption": "Compile Arduino sketch",
+    "caption": "Arduino: Compile sketch",
     "command": "compile"
   },
   {
-    "caption": "Upload Arduino sketch",
+    "caption": "Arduino: Upload sketch",
     "command": "upload"
+  },
+  {
+    "caption": "Arduino: Clean sketch",
+    "command": "clean"
   }
 ]
